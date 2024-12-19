@@ -20,7 +20,7 @@ Concept Used:
 ## 📑Data overview
 - datetime: datetime
 - season: season (1: spring, 2: summer, 3: fall, 4: winter)
-- holiday: whether day is a holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule)
+- holiday: whether day is a holiday or not.
 - workingday: if day is neither weekend nor holiday is 1, otherwise is 0.
 - weather:
   1.  Clear, Few clouds, partly cloudy, partly cloudy
@@ -101,3 +101,14 @@ Concept Used:
 - **Predictive Modeling**: Utilize advanced analytics for better forecasting and operational efficiency.
 
 By following these recommendations, Yulu can improve service efficiency, customer satisfaction, and overall performance.
+
+
+
+## 📥 Colab Notebook
+
+You can access the full analysis and code for the Yulu Bike-Sharing Business Case Study through the following link:
+
+[Colab Notebook: Yulu Business Case Study](https://colab.research.google.com/drive/1BQlrFzw5BADEKOGZuyto6aIrDR9zns93?usp=sharing)
+
+Feel free to explore the notebook for detailed code, analysis, and visualizations!
+
