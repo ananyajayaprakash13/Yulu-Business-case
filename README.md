@@ -73,78 +73,76 @@ Recommendations: Implement validation checks to prevent duplicate entries in the
 D. Analyze the distribution of Numerical & Categorical variables
 
 Insights:
-
 Numerical variables show varying distributions, some of which may be skewed. Categorical variables have different levels of frequency, indicating varied usage patterns.
 
 Recommendations:
-
 Consider transforming skewed numerical variables to normalize the data. This can improve the performance of predictive models.
 For imbalanced categorical variables, consider strategies like targeted marketing or promotions to balance usage across different categories.
+
 e. Check for Outliers and deal with them accordingly.
 
 Insights:
-
 Outliers were detected and removed based on the IQR method.
 
 Recommendations:
-
 Investigate the causes of outliers to determine if they indicate data issues or true anomalies. Implement policies to address data entry errors.
+
+
 Step 2: Establish a Relationship between the Dependent and Independent Variables
 
 Insights:
-
 The correlation heatmap indicates some highly correlated numerical variables.
 
 Recommendations:
-
 Remove or combine highly correlated variables to prevent multicollinearity, which can skew the results of predictive models.
 Consider using techniques like Principal Component Analysis (PCA) to reduce the dimensionality of the data while preserving important information.
+
+
 Step 3: Significant difference between the number of bike rides on Weekdays and Weekends
 
 Insights:
-
 A significant difference in bike rides between Weekdays and Weekends was found.
 
 Recommendations:
-
 Increase bike availability during weekends to meet higher demand.
 Develop specific marketing strategies for weekdays to boost rentals, such as weekday promotions or partnerships with businesses for commuter benefits.
+
+
 Step 4: Demand for bicycles on rent for different Weather conditions
 
 Insights:
-
 The demand for bicycles varies significantly with weather conditions.
 
 Recommendations:
-
 Adjust the fleet size and maintenance schedules based on weather forecasts to ensure availability during favorable conditions.
 Provide weather-appropriate gear (e.g., raincoats, umbrellas) to customers to encourage bike rentals during less favorable weather conditions.
+
+
 Step 5: Demand for bicycles on rent for different Seasons
 
 Insights:
-
 The demand for bicycles varies significantly with seasons.
 
 Recommendations:
-
 Plan for increased maintenance and resource allocation during peak seasons to ensure that the fleet is in optimal condition.
 Launch seasonal marketing campaigns to capitalize on higher demand periods, such as summer or spring.
+
 Step 6: Weather conditions during different Seasons
 
 Insights:
-
 Weather conditions significantly differ across seasons.
 
 Recommendations:
-
 Use historical weather patterns to predict bike rental demand and adjust operations accordingly.
 Optimize inventory levels based on expected seasonal weather conditions to avoid under- or over-supply of bikes.
-SUMMARY AND RECOMMENDATIONS
+
+
+## SUMMARY AND RECOMMENDATIONS
 
 Based on the analysis, Yulu can enhance its bike-sharing service by implementing the following strategies:
 
-Maintain data quality and consistency to ensure reliable analysis. Address data anomalies and manage outliers to improve the accuracy of insights.
-Optimize bike availability and maintenance schedules based on demand patterns influenced by day of the week, weather, and seasons.
-Develop targeted marketing campaigns to boost rentals during low-demand periods and capitalize on high-demand times.
-Use advanced analytics techniques to manage multicollinearity and dimensionality in the data for better predictive modeling.
+- Maintain data quality and consistency to ensure reliable analysis. Address data anomalies and manage outliers to improve the accuracy of insights.
+- Optimize bike availability and maintenance schedules based on demand patterns influenced by day of the week, weather, and seasons.
+- Develop targeted marketing campaigns to boost rentals during low-demand periods and capitalize on high-demand times.
+- Use advanced analytics techniques to manage multicollinearity and dimensionality in the data for better predictive modeling.
 By leveraging these Insights and Recommendations, Yulu can improve its operational efficiency, customer satisfaction, and overall business performance.
