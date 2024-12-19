@@ -37,7 +37,7 @@ Concept Used:
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Insights and Recommrndations
+# Insights and Recommrndations
 Step 1: Exploratory Data Analysis (EDA)
 
 A. Examine dataset structure, characteristics, and statistical summary.
