@@ -38,111 +38,66 @@ Concept Used:
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Insights and Recommrndations
-Step 1: Exploratory Data Analysis (EDA)
 
-A. Examine dataset structure, characteristics, and statistical summary.
+### **Step 1: Exploratory Data Analysis (EDA)**
 
-Insights:
+- **A. Dataset Structure & Summary**
+  - The dataset contains bike rental data (weather, season, rental counts).
+  - No missing values or duplicates found.
+  - **Recommendation**: Continue data quality checks to ensure reliability.
 
-The dataset contains detailed information on bike rentals, including various attributes such as date, weather, season, and rental counts. The dataset appears to have no missing values or duplicate records, ensuring data quality.
+- **B. Missing Values**
+  - No missing values detected.
+  - **Recommendation**: Maintain data entry consistency.
 
-Recommendations:
+- **C. Duplicate Records**
+  - No duplicates present.
+  - **Recommendation**: Implement validation checks for accuracy.
 
-Continue to ensure data quality by regularly checking for missing values and duplicates. This will help in maintaining accurate and reliable data for future analysis.
+- **D. Distribution of Variables**
+  - Skewed numerical distributions; varying categorical frequencies.
+  - **Recommendation**: Normalize numerical data and balance categorical variables.
 
-Implement automated data quality checks in the data pipeline to detect and rectify any anomalies promptly.
+- **E. Outliers**
+  - Outliers removed using IQR method.
+  - **Recommendation**: Investigate outliers for potential data issues.
 
-B. Identify missing values and perform imputation using an appropriate method.
+---
 
-Insights:
+### **Step 2: Relationship Between Variables**
+- **Insights**: Correlation between several numerical variables.
+- **Recommendation**: Eliminate highly correlated variables using PCA for dimensionality reduction.
 
-No missing values were found in the dataset.
+---
 
-Recommendations:
+### **Step 3: Weekday vs Weekend Demand**
+- **Insights**: Significant difference in bike demand between weekdays and weekends.
+- **Recommendation**: Increase bike availability on weekends. Implement weekday promotions.
 
-Maintain consistent and complete data entry practices to avoid missing values in future datasets.
+---
 
-If missing values do occur, establish a protocol for imputation using appropriate methods to ensure data integrity.
+### **Step 4: Demand for Bikes Based on Weather**
+- **Insights**: Demand varies significantly with weather.
+- **Recommendation**: Adjust fleet size according to weather forecasts and offer weather gear.
 
-C. Identify and remove duplicate records.
+---
 
-Insights: No duplicate records were found in the dataset.
+### **Step 5: Seasonal Demand**
+- **Insights**: Demand fluctuates with the seasons.
+- **Recommendation**: Plan resource allocation and marketing during peak seasons.
 
-Recommendations: Implement validation checks to prevent duplicate entries in the system. This ensures the accuracy of usage statistics and demand forecasting.
+---
 
-D. Analyze the distribution of Numerical & Categorical variables
+### **Step 6: Weather Across Seasons**
+- **Insights**: Seasonal weather patterns affect bike demand.
+- **Recommendation**: Use historical weather data to optimize bike availability.
 
-Insights:
-Numerical variables show varying distributions, some of which may be skewed. Categorical variables have different levels of frequency, indicating varied usage patterns.
+---
 
-Recommendations:
-Consider transforming skewed numerical variables to normalize the data. This can improve the performance of predictive models.
-For imbalanced categorical variables, consider strategies like targeted marketing or promotions to balance usage across different categories.
+### **Summary & Recommendations**
+- **Data Quality**: Ensure consistency and accuracy in the data.
+- **Bike Availability**: Adjust fleet based on day, weather, and seasonal demand.
+- **Marketing**: Launch targeted campaigns for weekdays and peak seasons.
+- **Predictive Modeling**: Utilize advanced analytics for better forecasting and operational efficiency.
 
-e. Check for Outliers and deal with them accordingly.
-
-Insights:
-Outliers were detected and removed based on the IQR method.
-
-Recommendations:
-Investigate the causes of outliers to determine if they indicate data issues or true anomalies. Implement policies to address data entry errors.
-
-
-Step 2: Establish a Relationship between the Dependent and Independent Variables
-
-Insights:
-The correlation heatmap indicates some highly correlated numerical variables.
-
-Recommendations:
-Remove or combine highly correlated variables to prevent multicollinearity, which can skew the results of predictive models.
-Consider using techniques like Principal Component Analysis (PCA) to reduce the dimensionality of the data while preserving important information.
-
-
-Step 3: Significant difference between the number of bike rides on Weekdays and Weekends
-
-Insights:
-A significant difference in bike rides between Weekdays and Weekends was found.
-
-Recommendations:
-Increase bike availability during weekends to meet higher demand.
-Develop specific marketing strategies for weekdays to boost rentals, such as weekday promotions or partnerships with businesses for commuter benefits.
-
-
-Step 4: Demand for bicycles on rent for different Weather conditions
-
-Insights:
-The demand for bicycles varies significantly with weather conditions.
-
-Recommendations:
-Adjust the fleet size and maintenance schedules based on weather forecasts to ensure availability during favorable conditions.
-Provide weather-appropriate gear (e.g., raincoats, umbrellas) to customers to encourage bike rentals during less favorable weather conditions.
-
-
-Step 5: Demand for bicycles on rent for different Seasons
-
-Insights:
-The demand for bicycles varies significantly with seasons.
-
-Recommendations:
-Plan for increased maintenance and resource allocation during peak seasons to ensure that the fleet is in optimal condition.
-Launch seasonal marketing campaigns to capitalize on higher demand periods, such as summer or spring.
-
-Step 6: Weather conditions during different Seasons
-
-Insights:
-Weather conditions significantly differ across seasons.
-
-Recommendations:
-Use historical weather patterns to predict bike rental demand and adjust operations accordingly.
-Optimize inventory levels based on expected seasonal weather conditions to avoid under- or over-supply of bikes.
-
-
-## SUMMARY AND RECOMMENDATIONS
-
-Based on the analysis, Yulu can enhance its bike-sharing service by implementing the following strategies:
-
-- Maintain data quality and consistency to ensure reliable analysis. Address data anomalies and manage outliers to improve the accuracy of insights.
-- Optimize bike availability and maintenance schedules based on demand patterns influenced by day of the week, weather, and seasons.
-- Develop targeted marketing campaigns to boost rentals during low-demand periods and capitalize on high-demand times.
-- Use advanced analytics techniques to manage multicollinearity and dimensionality in the data for better predictive modeling.
-By leveraging these Insights and Recommendations, Yulu can improve its operational efficiency, customer satisfaction, and overall business performance.
+By following these recommendations, Yulu can improve service efficiency, customer satisfaction, and overall performance.
